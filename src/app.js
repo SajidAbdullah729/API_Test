@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use(loggerMiddleware);
 
-// Routes
+// Routes: All the routes in users/userRoutes
 app.use("/users", userRoutes);
 
 app.listen(port, () => {

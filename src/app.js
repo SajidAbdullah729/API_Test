@@ -8,7 +8,7 @@ const loggerMiddleware = require("./middlewares/loggerMiddleware");
 const app = express();
 const port = 3000;
 
-// Middleware
+// Middleware With Cors
 app.use(cors());
 app.use(express.json());
 app.use(loggerMiddleware);
